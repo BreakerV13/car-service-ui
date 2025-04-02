@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Service</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div class="container">
+        <h1>Car Service</h1>
+        <button onclick="openAddCar()">Add Car</button>
+        </br>
+                <!-- Search Form -->
+        <div class="search-form">
+            <h2>Search Cars</h2>
+            <input type="text" id="brand" placeholder="Car Brand">
+            <input type="text" id="model" placeholder="Car Model">
+            <button onclick="searchCars(); searchRecomCars();">Search</button>
+        </div>
+        </br>
+        <div class="car-list">
+            <h2>Recommended</h2>
+            <div id="recom-cars"></div>
+        </div>
+        <div class="car-list">
+            <h2>All Cars</h2>
+            <div id="cars"></div>
+        </div>
+        
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
